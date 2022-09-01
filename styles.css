@@ -1,121 +1,174 @@
-                body {
-                    background-color: rgb(1, 58, 105);
-                    background-image: url("nfl.png");
-                    background-size: 45rem 50rem;
-                    background-repeat: no-repeat;
-                    background-position: 35rem 5rem;
-                }
-                
-                .champion-header {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 4rem;
-                    margin: 1rem 25rem;
-                    text-align: center;
-                    text-shadow: 2px 2px rgb(65, 13, 13);
-                    animation: blinker 0.5s linear infinite;
-                }
-                
-                @keyframes blinker {
-                    from {
-                        color: black;
-                        text-shadow: 2px 2px rgb(65, 13, 13);
-                        opacity: 2.0;
-                    }
-                    to {
-                        color: rgb(245, 38, 38);
-                        text-shadow: 2px 2px rgb(13, 10, 10);
-                        opacity: 0.5;
-                    }
-                }
-                
-                .header {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1rem;
-                    margin: 2rem 35.5rem;
-                    text-shadow: 2px 2px rgb(159, 153, 153);
-                    animation-duration: 5s;
-                    animation-name: slidein;
-                }
-                
-                @keyframes slidein {
-                    from {
-                        margin-left: 75%;
-                        width: 100%;
-                    }
-                    to {
-                        margin: 2rem 35.5rem;
-                        width: 100%;
-                    }
-                }
-                
-                .span-header {
-                    font-size: 4rem;
-                    text-shadow: 3px 3px rgb(183, 179, 179);
-                }
-                
-                #video-container {
-                    margin: 3rem 25rem;
-                    position: relative;
-                }
-                
-                .secret-message {
-                    display: none;
-                }
-                
-                .video-container:hover+.secret-message {
-                    display: block;
-                    color: red;
-                    font-size: 2rem;
-                    text-shadow: 1px 1px rgb(183, 179, 179);
-                }
-                
-                secret-message video {
-                    position: absolute;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
-                
-                @media only screen and (max-width: 600px) {
-                    body {
-                        background-size: 40rem 50rem;
-                        background-repeat: no-repeat;
-                        background-position: 15rem 5rem;
-                    }
-                    .span-header {
-                        text-shadow: 2px 2px rgb(183, 179, 179);
-                        margin: 0rem 0rem;
-                    }
-                    .header {
-                        display: block;
-                        margin: 3rem -1rem;
-                        text-align: center;
-                        text-shadow: 2px 2px rgb(159, 153, 153);
-                        animation-duration: 5s;
-                        animation-name: slidein;
-                    }
-                    @keyframes slidein {
-                        from {
-                            margin-left: 70%;
-                        }
-                        to {
-                            margin: 3rem -1rem;
-                        }
-                    }
-                    video-container {
-                        margin: 15rem 1rem;
-                        display: flex;
-                    }
-                    video {
-                        position: fixed;
-                        left: 0.5rem;
-                        top: 45%;
-                        max-width: 22rem;
-                    }
-                    .champion-header {
-                        font-size: 3rem;
-                        margin: 1rem 5rem;
-                        text-align: center;
-                        text-shadow: 2px 2px rgb(65, 13, 13);
-                        animation: blinker 0.5s linear infinite;
-                    }
-                }
+                                    body {
+                                        background-color: rgb(1, 58, 105);
+                                        background-image: url("nfl.png");
+                                        background-size: 45rem 50rem;
+                                        background-repeat: no-repeat;
+                                        background-position: 35rem 5rem;
+                                    }
+                                    
+                                    .champion-header {
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-size: 4rem;
+                                        margin: 1rem 25rem;
+                                        text-align: center;
+                                        text-shadow: 2px 2px rgb(65, 13, 13);
+                                        animation: blinker 0.5s linear infinite;
+                                    }
+                                    
+                                    @keyframes blinker {
+                                        from {
+                                            color: black;
+                                            text-shadow: 2px 2px rgb(65, 13, 13);
+                                            opacity: 2.0;
+                                        }
+                                        to {
+                                            color: rgb(245, 38, 38);
+                                            text-shadow: 2px 2px rgb(13, 10, 10);
+                                            opacity: 0.5;
+                                        }
+                                    }
+                                    
+                                    .header {
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-size: 1rem;
+                                        margin: 2rem 35.5rem;
+                                        text-shadow: 2px 2px rgb(159, 153, 153);
+                                        animation-duration: 5s;
+                                        animation-name: slidein;
+                                    }
+                                    
+                                    @keyframes slidein {
+                                        from {
+                                            margin-left: 75%;
+                                            width: 100%;
+                                        }
+                                        to {
+                                            margin: 2rem 35.5rem;
+                                            width: 100%;
+                                        }
+                                    }
+                                    
+                                    .span-header {
+                                        font-size: 4rem;
+                                        text-shadow: 3px 3px rgb(183, 179, 179);
+                                    }
+                                    
+                                    #video-container {
+                                        margin: 3rem 25rem;
+                                        position: relative;
+                                    }
+                                    
+                                    .secret-message {
+                                        display: none;
+                                    }
+                                    
+                                    .video-container:hover+.secret-message {
+                                        display: block;
+                                        color: red;
+                                        font-size: 2rem;
+                                        text-shadow: 1px 1px rgb(183, 179, 179);
+                                    }
+                                    
+                                    video {
+                                        position: absolute;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
+                                    /* screen 600*/
+                                    
+                                    @media only screen and (max-width: 600px) {
+                                        body {
+                                            background-size: 15rem 25rem;
+                                            background-repeat: no-repeat;
+                                            background-position: 15rem 5rem;
+                                        }
+                                        .span-header {
+                                            text-shadow: 2px 2px rgb(183, 179, 179);
+                                            margin: 0rem 0rem;
+                                        }
+                                        .header {
+                                            display: inline;
+                                            margin: 3rem -1rem;
+                                            text-align: center;
+                                            text-shadow: 2px 2px rgb(159, 153, 153);
+                                            animation-duration: 5s;
+                                            animation-name: slidein;
+                                        }
+                                        .champion-header {
+                                            font-size: 3rem;
+                                            margin: 1rem 0rem;
+                                            text-align: center;
+                                            text-shadow: 2px 2px rgb(65, 13, 13);
+                                            animation: blinker 0.5s linear infinite;
+                                        }
+                                        @keyframes slidein {
+                                            from {
+                                                margin-left: 70%;
+                                            }
+                                            to {
+                                                margin: 3rem -1rem;
+                                            }
+                                        }
+                                        video-container {
+                                            margin: 15rem 1rem;
+                                            display: flex;
+                                        }
+                                        video {
+                                            position: fixed;
+                                            left: 0.5rem;
+                                            top: 45%;
+                                            max-width: 22rem;
+                                        }
+                                    }
+                                    /* screen 900*/
+                                    
+                                    @media only screen and (max-width: 1590px) {
+                                        body {
+                                            background-repeat: no-repeat;
+                                            background-position: 27rem 5rem;
+                                        }
+                                        .span-header {
+                                            font-size: 6rem;
+                                            text-shadow: 2px 2px rgb(183, 179, 179);
+                                            margin: 0rem 0rem;
+                                        }
+                                        .champion-header {
+                                            font-size: 3.5rem;
+                                            margin: 1rem 5rem;
+                                            text-align: center;
+                                            text-shadow: 2px 2px rgb(65, 13, 13);
+                                            animation: blinker 0.5s linear infinite;
+                                        }
+                                        .header {
+                                            font-size: 1.5rem;
+                                            margin: 3rem -1rem;
+                                            text-align: center;
+                                            text-shadow: 1.5px 1.5px rgb(159, 153, 153);
+                                            animation-duration: 5s;
+                                            animation-name: slidein;
+                                        }
+                                        video {
+                                            max-height: 35rem;
+                                            max-width: 80rem;
+                                        }
+                                        @keyframes slidein {
+                                            from {
+                                                margin-left: 70%;
+                                            }
+                                            to {
+                                                margin: 3rem -1rem;
+                                            }
+                                        }
+                                        video-container {
+                                            margin: 15rem 1rem;
+                                            display: flex;
+                                        }
+                                        video {
+                                            margin-top: 1rem;
+                                            position: fixed;
+                                            left: 20rem;
+                                            top: 25%;
+                                            max-height: 40rem;
+                                            max-width: 55rem;
+                                        }
+                                    }
