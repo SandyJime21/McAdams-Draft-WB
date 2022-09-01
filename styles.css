@@ -122,7 +122,7 @@
                                     }
                                     /* screen 900*/
                                     
-                                    @media only screen and (max-width: 1590px) {
+                                    @media only screen and (max-width: 1900px) {
                                         body {
                                             background-repeat: no-repeat;
                                             background-position: 27rem 5rem;
